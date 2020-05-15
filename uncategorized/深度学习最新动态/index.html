@@ -1,0 +1,192 @@
+<html>
+<!-- Head tag -->
+<head>
+  <meta charset="UTF-8">
+
+  
+  <title>
+    深度学习最新动态 |
+    Deep Learning
+  </title>
+  
+
+
+  <meta name="description" content="随着定位技术和存储技术的发展，海量的轨迹被人类记录。如何有效地压缩轨迹中最被人关注的空间路径信息...">
+  <meta name="author" content="John Doe">
+  <meta property="og:title" content="深度学习最新动态" />
+  <meta property="og:description" content="随着定位技术和存储技术的发展，海量的轨迹被人类记录。如何有效地压缩轨迹中最被人关注的空间路径信息..." />
+  <meta property='og:site_name' content='Deep Learning' />
+  <meta property="og:image" content="https://windystreet.xyz/img/default.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="随着定位技术和存储技术的发展，海量的轨迹被人类记录。如何有效地压缩轨迹中最被人关注的空间路径信息..." />
+  <meta name="twitter:title" content="深度学习最新动态" />
+
+  <meta name="twitter:image" content="https://windystreet.xyz/img/default.jpg" />
+
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <!-- Menu -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+  <div class="container">
+    <a class="navbar-brand logo" href="https://windystreet.xyz">
+      Deep Learning</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item item">
+          
+        <li class="nav-item item">
+          <a class="nav-link" href="/">
+            Home</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="/archives">
+            🗂️Archives</a>
+        </li>
+        
+        <li class="nav-item item">
+          <a class="nav-link" href="https://hexo.io/" target="_blank" rel="noopener">
+            Hexo</a>
+        </li>
+        
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <main class="page main-page">
+        <div class="container blogPost">
+    <div class="row">
+        <div class="col-sm-9 px-md-5">
+            <h2 class="blog-post-title">
+                深度学习最新动态
+            </h2>
+            <p class="meta">
+                <i class="far fa-clock"></i>
+                2020-05-14 
+            </p>
+            <!-- Content -->
+            <blockquote>
+<p>网络首发时间：2020-05-13 09:40:36</p>
+<p>网络首发地址：<a href="http://kns.cnki.net/kcms/detail/50.1075.TP.20200512.2113.002.html" target="_blank" rel="noopener">http://kns.cnki.net/kcms/detail/50.1075.TP.20200512.2113.002.html</a></p>
+</blockquote>
+<h1 id="基于循环神经网络的轨迹压缩算法实现"><a href="#基于循环神经网络的轨迹压缩算法实现" class="headerlink" title="基于循环神经网络的轨迹压缩算法实现"></a>基于循环神经网络的轨迹压缩算法实现</h1><h5 id="励益韬-孙未未"><a href="#励益韬-孙未未" class="headerlink" title="励益韬  孙未未"></a>励益韬  孙未未</h5><p>复旦大学计算机科学技术学院  上海  201203</p>
+<p>上海市数据科学重点实验室（复旦大学） 上海  201203</p>
+<p><img src="https://i.loli.net/2020/05/16/q3TU8nDAJVgl5mf.png" alt="image.png"></p>
+<p>​        随着定位技术和存储技术的发展，海量的轨迹被人类记录。如何有效地压缩轨迹中最被人关注的空间路径信息并无损地将原始信息还原引起了人们的广泛研究。对轨迹的压缩算法主要分为基于简化线段的压缩和基于路网的轨迹压缩两类，现有算法存在算法假设不合理、压缩能力差等缺点。励益韬  和孙未未根据路网中轨迹的分布特性以及循环神经网络对变长时序序列的建模能力，提出了基于循环神经网络的轨迹压缩算法，通过深度学习模型高效地概括轨迹分布，同时利用路网结构进一步缩小压缩空间，定量分析了不同输入对算法压缩比的影响。最后通过实验证明，基于循环神经网络的轨迹压缩算法不仅具有比现有算法高的压缩比，还能支撑增量数据下的轨迹压缩；同时证明了不同输入如何影响算法性能的推理。 </p>
+<ol>
+<li><h4 id="利用循环神经网络对轨迹进行建模"><a href="#利用循环神经网络对轨迹进行建模" class="headerlink" title="利用循环神经网络对轨迹进行建模"></a>利用循环神经网络对轨迹进行建模</h4></li>
+</ol>
+<p>​        LSTM门的 RNN 能很好地对序列进行建模，同时解决了 RNN 网络梯度灾难的问题，被广泛应用于自然语言处理领域。我们可以利用 LSTM 门的 RNN 对同样是时序序列的轨迹进行概率模型学习。然而，路网中的轨迹又完全不等同于自然语言领域的句子，因为每条边的合法转移状态是有限且极少的。在传统的 RNN 模型中，最后会通过分类的 softmax 层来输出每个状态是当前输入的下一个状态的概率。softmax 函数如式（1）所示，它是恒大于 0 的。</p>
+<p><img src="https://i.loli.net/2020/05/16/KWkVhirb5NojHYI.png" alt="image.png"></p>
+<p>​        限制状态空间的 RNN 模型（ Constrained StateSpace RNN，CSSRNN）是一种基于路网拓扑结构特性而改进的深度学习模型,在保留 LSTM 特性的情况下，通过限制状态的 softmax 层来表征路网的拓扑结构，加快模型的运行速度，提升模型的学习能力，它的结构如图 1 所示。</p>
+<p><img src="https://i.loli.net/2020/05/16/sp8odeMTIQCPANv.png" alt="image.png"></p>
+<p>​        该模型的输入层为多维的嵌入（embedding）层，人为控制维度，输出层维度等于轨迹所在的城市路网的边数，即状态空间的大小。Ti 时刻， 轨迹中对应的轨迹段 ei 的embbeding 向量经过中间的带有 LSTM 门的隐层之后，通过限制状态的 softmax 层输出路网中每一条边是下一个轨迹段 ei+1 的概率,其中概率值最大的网络节点所代表的路网边即为模型预测的下一条轨迹段。</p>
+<p>​       它与传统的 RNN 的最大不同就是将传统的 softmax 层改进为限制状态的 softmax 层。限制状态的 softmax 层利用路网的拓扑性质，在传统的 softmax 层前加相应的“掩码”（mask）：如果该状态是当前输入轨迹段的非法转移状态，则强制乘 0，否则乘 1。</p>
+<p>形式化来说，t 时刻输入轨迹边 rt，输出层中每一条路网边 i 对应的网络节点的概率输出如式（2）所示：</p>
+<p><img src="https://i.loli.net/2020/05/16/nE8ZAfzgWTvlYDG.png" alt="image.png"></p>
+<p>其中，ht 表示前一层隐层的输出，<strong>M</strong> <strong>r</strong> ,<strong>i</strong>代表路网边 i 对于输入轨迹段 ri 的“掩码”的值，如果路网边 i 与 ri 相邻，<strong>M</strong> <strong>r</strong> ,<strong>i</strong>则为 1，反之为 0。</p>
+<p>​        这样显式地将当前轨迹段的非法转移状态的概率置为0 后，使神经网络在训练的过程中专注于当前输入轨迹段的合法转移状态，提高了网络学习轨迹数据分布的能力。同时又能加快模型的训练速度，因为非法转移状态对应的项被置为 0 后，它们的梯度不会向前传播，减少了网络在训练时的开销。</p>
+<ol start="2">
+<li><h4 id="TCBR-算法的流程"><a href="#TCBR-算法的流程" class="headerlink" title="TCBR 算法的流程"></a>TCBR 算法的流程</h4></li>
+</ol>
+<p>​        图 2 展示了 TCBR 算法的压缩和解压缩流程。压缩过程主要分为 3 个阶段：地图匹配、模型训练和数据压缩。首先利用轨迹所在城市的路网信息和地图匹配算法，将轨迹由原始的 GPS 点坐标序列转化为路网边序列，之后利用轨迹数据对 CSSRNN 进行训练，直至模型收敛。</p>
+<p><img src="https://i.loli.net/2020/05/16/GocPOrfyj7BHKLe.png" alt="image.png"></p>
+<p>​        此时 CSSRNN 网络已经学习了轨迹数据集的分布，我们将原数据集输入该网络中，对比网络输出预测值与原数据， 找到网络预测错误的边序列，记录其正确值以及其在轨迹中的位置。具体来说，即针对每一条轨迹 T=(e1 ,e2 ,e3 ,…，en )， 依次向网络输入 e ,e1 ,e2 …en 这 k-1 条路网边 ID，网络依次会输出 e ‘,e1 ‘,…，en’。对比 e1 和 e1 ‘的值，如果两者不同，则将（ei，i）这二元组加入到“预测错误的轨迹边序列的正确值”集合 Scorrect 中。同时将每条轨迹的起点和轨迹长度信息加入到集合 Sstart,此时 Scorrect 和 Sstart 构成了被压缩的数据集。</p>
+<p>​        解压缩时，针对每条轨迹 T’=(e1)，一开始只有起点和轨迹长度信息。我们只需将其起点序列 ID 输入 CSSRNN 模型中，获得网络预测的下一条轨迹段的值。如果当前时刻的输出不在 Scorrect 中，则把输出加入到轨迹 T’，同时作为模型的输入进而预测再下一个轨迹段；反之则用正确值替代输出值，将其加入到轨迹 T’中，并将其作为模型下一时刻的输入。如此循环，直到轨迹 T’的长度等于之前记录的轨迹长度，将 T’加入到解压缩的轨迹集合中，转而对下一条轨迹采用同样的方式进行解压缩，最终无损地还原出原始轨迹数据。</p>
+
+            <br />
+            <p class="meta">
+                
+            </p>
+        </div>
+
+        <div class="col-sm-3">
+             
+<span><b> TL;DR</b></span>
+<p>
+	Yet another hexo theme.
+</p>
+<hr />
+
+
+<span><b> TL;DR 2</b></span>
+<p>
+	No, not another one :/
+</p>
+<hr />
+
+ 
+
+        </div>
+    </div>
+</div>
+<!-- Menu fade on scroll -->
+<script>
+    var isScrolling;
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener(
+        'scroll',
+        function(event) {
+            window.clearTimeout(isScrolling);
+            isScrolling = setTimeout(function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    $('#navbar').slideDown();
+                } else {
+                    $('#navbar').slideUp();
+                }
+                prevScrollpos = currentScrollPos;
+            }, 66);
+        },
+        false
+    );
+</script>
+
+
+
+<a class="float-right gradient btn paginationbtn" href="/uncategorized/深度学习近年文献/"><i class="fas fa-chevron-right"></i></a>
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+  <div class="container">
+    <div class="social-icons">
+      
+      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
+      
+      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
+      
+      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
+      
+    </div>
+  </div>
+</footer>
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
