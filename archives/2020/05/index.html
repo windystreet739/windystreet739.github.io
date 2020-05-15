@@ -1,210 +1,565 @@
+<!DOCTYPE html>
 <html>
-<!-- Head tag -->
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  
+  <title>归档: 2020/5 | Deep Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Deep Learning">
+<meta property="og:url" content="https://windystreet.xyz/archives/2020/05/index.html">
+<meta property="og:site_name" content="Deep Learning">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Deep Learning" type="application/atom+xml">
+  
 
   
-  <title>
-    Deep Learning -
-    
-  </title>
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
   
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
 
-
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-  <meta property="og:title" content="Deep Learning" />
-  <meta property="og:description" content="" />
-  <meta property='og:site_name' content='Deep Learning' />
-  <meta property="og:image" content="https://windystreet.xyz/img/default.jpg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:title" content="Deep Learning" />
-
-  <meta name="twitter:image" content="https://windystreet.xyz/img/default.jpg" />
-
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
 
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+    <link rel="stylesheet" href="/css/archive.css" >
+  
+  
+  
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body>
-    <!-- Menu -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
-  <div class="container">
-    <a class="navbar-brand logo" href="https://windystreet.xyz">
-      Deep Learning</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item item">
+
+
+  <body>
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
           
-        <li class="nav-item item">
-          <a class="nav-link" href="/">
-            Home</a>
-        </li>
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                 >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
         
-        <li class="nav-item item">
-          <a class="nav-link" href="/archives">
-            🗂️Archives</a>
-        </li>
+          <section id="main">
+  <div class="archives-tags-wrap"><blockquote><span>嗯，目前共计6篇文章</span></blockquote>
+
+
+<!-- 分页显示 -->
+
+	
+	
+		
+		
+		  
+		  
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="/archives/2020" class="archive-year">2020</a></h1>
+		    </div>
+		    <div class="archives">
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B/" class="archive-article-date">
+	  <time datetime="2020-05-15T15:57:53.000Z" itemprop="datePublished">2020-05-15</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B/">深度学习简介</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+		
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/" class="archive-article-date">
+	  <time datetime="2020-05-14T16:19:49.000Z" itemprop="datePublished">2020-05-15</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/">深度学习发展历程</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+		
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/" class="archive-article-date">
+	  <time datetime="2020-05-14T15:27:56.000Z" itemprop="datePublished">2020-05-14</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/">深度学习应用领域</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+		
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/" class="archive-article-date">
+	  <time datetime="2020-05-14T14:39:39.000Z" itemprop="datePublished">2020-05-14</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/">深度学习常用算法</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+		
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%BF%91%E5%B9%B4%E6%96%87%E7%8C%AE/" class="archive-article-date">
+	  <time datetime="2020-05-14T13:02:33.000Z" itemprop="datePublished">2020-05-14</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%BF%91%E5%B9%B4%E6%96%87%E7%8C%AE/">深度学习近年文献</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+		
+		
+		<article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%80%E6%96%B0%E5%8A%A8%E6%80%81/" class="archive-article-date">
+	  <time datetime="2020-05-14T12:21:51.000Z" itemprop="datePublished">2020-05-14</time>
+	</a>
+
+      
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="archive-article-title" href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%80%E6%96%B0%E5%8A%A8%E6%80%81/">深度学习最新动态</a>
+    </h1>
+  
+
+    </header>
+  </div>
+</article>
+	
+	
+		</div></section>
+	
+
+	<!-- 页数指示器 -->
+	
+
+
+
+
+</section>
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
         
-        <li class="nav-item item">
-          <a class="nav-link" href="https://hexo.io/" target="_blank" rel="noopener">
-            Hexo</a>
-        </li>
+          <li>
+            <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B/">深度学习简介</a>
+          </li>
         
-        </li>
+          <li>
+            <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/">深度学习发展历程</a>
+          </li>
+        
+          <li>
+            <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/">深度学习应用领域</a>
+          </li>
+        
+          <li>
+            <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/">深度学习常用算法</a>
+          </li>
+        
+          <li>
+            <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%BF%91%E5%B9%B4%E6%96%87%E7%8C%AE/">深度学习近年文献</a>
+          </li>
+        
       </ul>
     </div>
   </div>
-</nav>
 
-    <main class="page main-page">
+  
+</aside>
         
+      </div>
+      
+      <footer id="footer">
+  
 
-<div class="title">
-    <h2>
-        2020/5
-    </h2>
-</div>
-
-
-<div class="band">
-    
-    <div class="item-01">
-  <a href="/uncategorized/深度学习简介/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi1.jpeg);"></div>
-    <article>
-      <h1>
-        深度学习简介
-      </h1>
-      <p>
-        Google 如何在短短几秒钟内将整个网页翻译成不同的语言，或者你的手机图库如何根据它们的位置对图片进行分组?
-      </p>
-      <span>
-        2020-05-15</span>
-    </article>
-  </a>
-</div>
-    
-    <div class="item-02">
-  <a href="/uncategorized/深度学习发展历程/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi2.jpg);"></div>
-    <article>
-      <h1>
-        深度学习发展历程
-      </h1>
-      <p>
-        1943年，由神经科学家麦卡洛克(W.S.McCilloch) 和数学家皮兹（W.Pitts）在《数学生物物理学公告》上发表论文《神经活动中内在思想的逻辑演算》（A Logical Calculus of the Ideas Immanent in Nervous Activity）。建立了神经网络和数学模型，称为MCP模型
-      </p>
-      <span>
-        2020-05-15</span>
-    </article>
-  </a>
-</div>
-    
-    <div class="item-03">
-  <a href="/uncategorized/深度学习应用领域/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi3.png);"></div>
-    <article>
-      <h1>
-        深度学习应用领域
-      </h1>
-      <p>
-        近年来，随着人工智能的发展，深度学习俨然已经成为一个热词。谷歌将深度学习应用于语音识别和图像识别，Netflix和亚马逊则利用深度学习来了解客户的行为习惯。还有一个事，说出来你可能不信，但确实已经发生了——MIT的研究学者已经在尝试用深度学习来预测未来
-      </p>
-      <span>
-        2020-05-14</span>
-    </article>
-  </a>
-</div>
-    
-    <div class="item-04">
-  <a href="/uncategorized/深度学习相关算法/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi4.png);"></div>
-    <article>
-      <h1>
-        深度学习常用算法
-      </h1>
-      <p>
-        过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影
-      </p>
-      <span>
-        2020-05-14</span>
-    </article>
-  </a>
-</div>
-    
-    <div class="item-05">
-  <a href="/uncategorized/深度学习近年文献/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi5.jpg);"></div>
-    <article>
-      <h1>
-        深度学习近年文献
-      </h1>
-      <p>
-        地质领域机器学习、深度学习及实现语言 机器学习的隐私保护研究综述  机器学习与深度学习的发展及应用
-      </p>
-      <span>
-        2020-05-14</span>
-    </article>
-  </a>
-</div>
-    
-    <div class="item-06">
-  <a href="/uncategorized/深度学习最新动态/" class="post">
-    <div class="thumb" style="background-image: url(/./img/fi6.jpg);"></div>
-    <article>
-      <h1>
-        深度学习最新动态
-      </h1>
-      <p>
-        随着定位技术和存储技术的发展，海量的轨迹被人类记录。如何有效地压缩轨迹中最被人关注的空间路径信息...
-      </p>
-      <span>
-        2020-05-14</span>
-    </article>
-  </a>
-</div>
-    
-</div>
-
-
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer">
   <div class="container">
-    <div class="social-icons">
-      
-      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
-      
-      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
-      
-      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
-      
-    </div>
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Deep Learning All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
   </div>
 </footer>
-    <!-- After footer scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
 
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Deep Learning
+          </div>
+          <div class="panel-body">
+            Copyright © 2020 John Doe All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
 </html>

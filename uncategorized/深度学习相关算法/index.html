@@ -1,90 +1,221 @@
+<!DOCTYPE html>
 <html>
-<!-- Head tag -->
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  
+  <title>深度学习常用算法 | Deep Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="深度学习常用算法过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影。很多关于机器学习的讨论都混淆了“机器学习能做什么”和“人类希望机器学习能做什么”。从根本上讲，机器学习是运用算法从原始数据中提取信息，并用某种类型的模型进行表示，然后使用该模型对一些尚未用模型表示的其他数据来进行推断。 ​    神经网络就是机器学习各类模型中的其">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深度学习常用算法">
+<meta property="og:url" content="https://windystreet.xyz/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/index.html">
+<meta property="og:site_name" content="Deep Learning">
+<meta property="og:description" content="深度学习常用算法过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影。很多关于机器学习的讨论都混淆了“机器学习能做什么”和“人类希望机器学习能做什么”。从根本上讲，机器学习是运用算法从原始数据中提取信息，并用某种类型的模型进行表示，然后使用该模型对一些尚未用模型表示的其他数据来进行推断。 ​    神经网络就是机器学习各类模型中的其">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/5dGIngHqp7zsDxy.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/ZjxcJpyzieBgduI.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/DSMPszE7CqB6NUw.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/Z3a1G7AfdOPNTyB.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/Si1H7sOFGc24rUx.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/OB9PFDvx7inuHy3.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/FhZSEquLodpMOm6.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/6YysLNu4mztUMgi.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/Zr8whvTUYMmakyX.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/MQh9prUJXAdOfWK.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/HIvRC6j5QlbwGpT.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/05/16/Tg5hWusEkqn9Kz4.jpg">
+<meta property="article:published_time" content="2020-05-14T14:39:39.000Z">
+<meta property="article:modified_time" content="2020-05-15T17:27:46.239Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/16/5dGIngHqp7zsDxy.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Deep Learning" type="application/atom+xml">
+  
 
   
-  <title>
-    深度学习常用算法 |
-    Deep Learning
-  </title>
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
   
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
 
-
-  <meta name="description" content="过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影">
-  <meta name="author" content="John Doe">
-  <meta property="og:title" content="深度学习常用算法" />
-  <meta property="og:description" content="过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影" />
-  <meta property='og:site_name' content='Deep Learning' />
-  <meta property="og:image" content="https://windystreet.xyz/img/default.jpg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影" />
-  <meta name="twitter:title" content="深度学习常用算法" />
-
-  <meta name="twitter:image" content="https://windystreet.xyz/img/default.jpg" />
-
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
 
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body>
-    <!-- Menu -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
-  <div class="container">
-    <a class="navbar-brand logo" href="https://windystreet.xyz">
-      Deep Learning</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item item">
-          
-        <li class="nav-item item">
-          <a class="nav-link" href="/">
-            Home</a>
-        </li>
-        
-        <li class="nav-item item">
-          <a class="nav-link" href="/archives">
-            🗂️Archives</a>
-        </li>
-        
-        <li class="nav-item item">
-          <a class="nav-link" href="https://hexo.io/" target="_blank" rel="noopener">
-            Hexo</a>
-        </li>
-        
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-    <main class="page main-page">
-        <div class="container blogPost">
-    <div class="row">
-        <div class="col-sm-9 px-md-5">
-            <h2 class="blog-post-title">
-                深度学习常用算法
-            </h2>
-            <p class="meta">
-                <i class="far fa-clock"></i>
-                2020-05-14 
-            </p>
-            <!-- Content -->
-            <h1 id="深度学习常用算法"><a href="#深度学习常用算法" class="headerlink" title="深度学习常用算法"></a>深度学习常用算法</h1><p>过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影。很多关于机器学习的讨论都混淆了“机器学习能做什么”和“人类希望机器学习能做什么”。从根本上讲，机器学习是运用算法从原始数据中提取信息，并用某种类型的模型进行表示，然后使用该模型对一些尚未用模型表示的其他数据来进行推断。</p>
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-深度学习相关算法" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      深度学习常用算法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/" class="article-date">
+	  <time datetime="2020-05-14T14:39:39.000Z" itemprop="datePublished">2020-05-14</time>
+	</a>
+
+      
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="深度学习常用算法"><a href="#深度学习常用算法" class="headerlink" title="深度学习常用算法"></a>深度学习常用算法</h1><p>过去十年里，人们对机器学习的兴趣经历了爆炸式的整长。我们几乎每天都可以在计算机程序、行业会议和媒体上看到机器学习的身影。很多关于机器学习的讨论都混淆了“机器学习能做什么”和“人类希望机器学习能做什么”。从根本上讲，机器学习是运用算法从原始数据中提取信息，并用某种类型的模型进行表示，然后使用该模型对一些尚未用模型表示的其他数据来进行推断。</p>
 <p>​    神经网络就是机器学习各类模型中的其中一类，并且已经存在了至少50年。神经网络的基本单位是节点，它的想法大致来源于哺乳动物大脑中的生物神经元。生物大脑中的神经元节点之间的链接是随着时间推移不断演化的，而神经网络中的神经元节点链接也借鉴了这一点，会不断演化（通过“训练”的方式）。</p>
 <p>​    神经网络中很多重要框架的建立和改进都完成于二十世纪八十年代中期和九十年代初期。然而，要想获得较好结果需要大量的时间和数据，由于当时计算机的能力有限，神经网络的发展受到了一定的阻碍，人们的关注度也随之下降。二十一世纪初期，计算机的运算能力呈指数级增长，业界也见证了计算机技术发展的“寒武纪爆炸”——这在之前都是无法想象的。深度学习以一个竞争者的姿态出现，在计算能力爆炸式增长的十年里脱颖而出，并且赢得了许多重要的机器学习竞赛。其热度在2017年仍然不减。如今，在机器学习的出现的地方我们都能看到深度学习的身影。</p>
 <p>​    这是一个小例子，词向量的 t-SNE 投影，通过相似性进行聚类。</p>
@@ -170,82 +301,288 @@
 <p>总结：</p>
 <p>​    深度学习是非常注重技术实践，所谓的百看不如一练。</p>
 
-            <br />
-            <p class="meta">
-                
-            </p>
-        </div>
-
-        <div class="col-sm-3">
-             
-<span><b> TL;DR</b></span>
-<p>
-	Yet another hexo theme.
-</p>
-<hr />
-
-
-<span><b> TL;DR 2</b></span>
-<p>
-	No, not another one :/
-</p>
-<hr />
-
- 
-
-        </div>
+      
     </div>
-</div>
-<!-- Menu fade on scroll -->
+    <footer class="article-footer">
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>本文作者:  </strong>John Doe</a>
+          </li>
+          <li class="post-copyright-link">
+          <strong>本文链接:  </strong>
+          <a href="/uncategorized/深度学习相关算法/" target="_blank" title="深度学习常用算法">https://windystreet.xyz/uncategorized/深度学习相关算法/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>版权声明:   </strong>
+            本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            许可协议。转载请注明出处
+          </li>
+         
+        </ul>
+<div>
+
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+        
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          深度学习应用领域
+        
+      </div>
+    </a>
+  
+  
+    <a href="/uncategorized/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%BF%91%E5%B9%B4%E6%96%87%E7%8C%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">深度学习近年文献</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深度学习常用算法"><span class="nav-number">1.</span> <span class="nav-text">深度学习常用算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、反向传播"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1、反向传播</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、随机梯度下降"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2、随机梯度下降</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、学习率衰减"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3、学习率衰减</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、Dropout"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4、Dropout</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、最大池"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5、最大池</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、批量标准化"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6、批量标准化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、长短期记忆"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7、长短期记忆</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、Skip-gram"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">8、Skip-gram</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9、连续词袋模型"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">9、连续词袋模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10、迁移学习"><span class="nav-number">1.0.0.10.</span> <span class="nav-text">10、迁移学习</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Deep Learning All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
 <script>
-    var isScrolling;
-    var prevScrollpos = window.pageYOffset;
-    window.addEventListener(
-        'scroll',
-        function(event) {
-            window.clearTimeout(isScrolling);
-            isScrolling = setTimeout(function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    $('#navbar').slideDown();
-                } else {
-                    $('#navbar').slideUp();
-                }
-                prevScrollpos = currentScrollPos;
-            }, 66);
-        },
-        false
-    );
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-<a class="float-left gradient btn paginationbtn" href="/uncategorized/深度学习近年文献/"><i class="fas fa-chevron-left"></i></a>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<a class="float-right gradient btn paginationbtn" href="/uncategorized/深度学习应用领域/"><i class="fas fa-chevron-right"></i></a>
 
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer">
-  <div class="container">
-    <div class="social-icons">
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+  
+<script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
       
-      <a href="https://hexo.io/" title="Hexo.io" target="_blank" rel="noopener" class="fas fa-home"></a>
-      
-      <a href="https://twitter.com/hexojs" title="@hexojs" target="_blank" rel="noopener" class="fab fa-twitter"></a>
-      
-      <a href="https://github.com/RandomAdversary/Gradient/issues" title="Report issue" target="_blank" rel="noopener" class="fas fa-bug"></a>
-      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Deep Learning
+          </div>
+          <div class="panel-body">
+            Copyright © 2020 John Doe All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
     </div>
   </div>
-</footer>
-    <!-- After footer scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
 </body>
-
 </html>
